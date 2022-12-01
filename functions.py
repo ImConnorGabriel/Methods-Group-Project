@@ -1,4 +1,5 @@
 import math
+import pytest
 
 ## opens a file in read mode
 ## filename received as a parameter
@@ -7,10 +8,20 @@ def openFile(filename):
 
     print("File opened.")
 
+######################################################
 ## takes two numbers and returns
 ## the result of a division
 def numbers(num1, num2):
     return num1 / num2
+
+#PyTest function for numbers success
+def test_numbers():
+    assert numbers(10,2) == 5
+
+#PyTest function for numbers failure
+def test_numbers_fail():
+    assert numbers(20,4) == 10
+#####################################################
 
 ## takes in two points
 ## finds the distance between the points
