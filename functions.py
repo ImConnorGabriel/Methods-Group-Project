@@ -23,6 +23,7 @@ def test_numbers_fail():
     assert numbers(20,4) == 10
 #####################################################
 
+#####################################################
 ## takes in two points
 ## finds the distance between the points
 def dist(x1, y1, x2, y2):
@@ -30,6 +31,14 @@ def dist(x1, y1, x2, y2):
     dist = math.sqrt(dist)
 
     return dist
+
+#PyTest function for success of dist function
+def test_dist():
+    assert dist(1,2,3,4) == 2.8284271247461903
+    
+def test_dist_failure():
+    assert dist(1,2,3,4) == 10
+#####################################################
 
 ## takes in a string -- reverses it
 ## then compares the two
