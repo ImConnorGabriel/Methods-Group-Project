@@ -40,6 +40,7 @@ def test_dist_failure():
     assert dist(1,2,3,4) == 10
 #####################################################
 
+#####################################################
 ## takes in a string -- reverses it
 ## then compares the two
 def isPalindrome(temp):
@@ -51,6 +52,15 @@ def isPalindrome(temp):
     else:
         return False
 
+#PyTest Function for success
+def test_isPalindrome():
+    assert isPalindrome("loool") == True
+    
+#PyTest Function for failure     
+def test_isPalindrome_failure():
+    assert isPalindrome("Palindrome") == True
+####################################################
+    
 ## has input to receive two numbers
 ## divides the two, then outputs the result
 def divide():
